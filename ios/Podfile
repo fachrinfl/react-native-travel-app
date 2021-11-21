@@ -3,6 +3,12 @@ require_relative '../node_modules/@react-native-community/cli-platform-ios/nativ
 
 platform :ios, '11.0'
 
+project 'TravelApp',
+        'Dev.Debug' => :debug,
+        'Dev.Release' => :release,
+        'Staging.Debug' => :debug,
+        'Staging.Release' => :release
+
 target 'TravelApp' do
   config = use_native_modules!
 
